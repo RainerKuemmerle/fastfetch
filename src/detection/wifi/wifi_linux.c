@@ -270,8 +270,8 @@ static const char* detectWifiWithIoctls(FF_MAYBE_UNUSED const FFinstance* instan
         }
 
         //FIXME: doesn't work
-        if(ioctl(sock, SIOCGIWSPY, &iwr) >= 0)
-            item->conn.signalQuality = iwr.u.qual.level;
+        //if(ioctl(sock, SIOCGIWSPY, &iwr) >= 0)
+        //    item->conn.signalQuality = iwr.u.qual.level;
 
         //FIXME: doesn't work
         struct iw_encode_ext iwe;
